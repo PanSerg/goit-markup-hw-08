@@ -1,0 +1,153 @@
+/* Лишнее */
+
+.properties {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+}
+
+.button-marketing {
+  width: 130px;
+  height: 38px;
+  left: 957px;
+  top: 174px;
+}
+
+.botton-tools {
+  width: 112px;
+  height: 38px;
+  left: 726px;
+  top: 174px;
+}
+
+.button-sits {
+  width: 125px;
+  height: 38px;
+  left: 593px;
+  top: 174px;
+}
+
+.button-design {
+  width: 103px;
+  height: 38px;
+  left: 846px;
+  top: 174px;
+}
+
+.box-sizing {
+  box-sizing: border-box;
+  position: absolute;
+  width: 370px;
+  height: 404px;
+  left: 215px;
+  top: 262px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  background-image: url(../images/w4/symbol-defs.svg);
+}
+
+.icon-leter {
+  fill: #FFFFFF;
+}
+
+.feature-skills {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+}
+
+.button-blue {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.contacts-link {
+  display: flex;
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.logo-light {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+}
+
+.test-conntainer {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.example {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.button-ic {
+  padding: 0;
+  padding-top: 16px;
+  border: none;
+  background: none;
+}
+
+.div {
+  display: block;
+}
+
+ .form {
+   display: block;
+   align-items: center;
+   position: absolute;
+ }
+
+ .text-form {
+   padding-left: 40px;
+ }
+
+.send {
+  padding: 10px 52px;
+}
+
+.themes {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--main-text-color);
+}
+
+.thems-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.contact-tel {
+  color: var(--secondary-text-color);
+  transition: color 250ms var(--cubic-beziar);
+}

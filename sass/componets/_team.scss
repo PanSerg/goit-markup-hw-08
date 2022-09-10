@@ -1,0 +1,87 @@
+.section-title-bg {
+    background-color: #F5F4FA;
+}
+
+.team {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+.site-item {
+    display: flex;
+}
+
+.site-command {
+    background: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    &:not(:last-child) {
+        margin-right: 30px;
+        }
+}
+
+.tim-card {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.tim-title {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    align-items: center;
+}
+
+.tim-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    margin-bottom: 16px;
+    align-items: center;
+}
+
+.tim-networks {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.team-link {
+    color: #AFB1B8;
+    display: flex;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    border-radius: 50px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-beziar);
+        &:hover,
+        &:focus {
+        background-color: #2196f3;
+        color: #ffffff;
+        transition: color 250ms var(--cubic-beziar);
+    }
+}
+
+.button-icon {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+    transition: fill 250ms var(--cubic-beziar);
+    &:not(:last-child) {
+    padding-right: 10px;
+    }
+}
