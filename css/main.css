@@ -54,6 +54,14 @@ body {
   color: var(--accent-color);
 }
 
+header, footer, section {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -142,7 +150,7 @@ body {
 .navigation__link:hover::after {
   transform: scaleX(1);
 }
-.navigation__link--current::after {
+.navigation__link--current:after {
   content: "";
   display: block;
   width: 100%;

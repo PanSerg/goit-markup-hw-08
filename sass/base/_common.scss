@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: 'Roboto';
@@ -17,3 +18,11 @@ body {
     }
 }
 
+
+header,footer,section {
+    display: none;
+}
+
+.block {
+    display: block;
+}
