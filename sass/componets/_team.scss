@@ -14,6 +14,11 @@
 
 .site-item {
     display: flex;
+    flex-direction: column;
+    @media screen and (min-width: 480px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+}
 }
 
 .site-command {
@@ -23,11 +28,29 @@
     &:not(:last-child) {
         margin-right: 30px;
         }
+@media screen and (min-width: 480px) {
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+@media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+@media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px) / 4);
+}
+
+@media screen and (max-width: 767px) {
+    not:last-child: margin-right: 30px;
+}
 }
 
 .tim-card {
     text-align: center;
     padding: 30px 0;
+@media screen and (max-width: 767px) {
+    text-align: center;
+}
 }
 
 .tim-title {
