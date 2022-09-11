@@ -1,13 +1,39 @@
+.clients-header {
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+@media screen and (min-width: 1199px) {
+    font-size: 36px;
+    line-height: 1.16;
+}
+}
 .clients-container {
+    gap: 30px;
     display: flex;
-    box-sizing: border-box;
+    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .clients-item {
-    width: 170px;
     height: 92px;
-    &:not(:last-child) {
-        margin-right: 30px;
+    flex-basis: calc((100% - 30px) / 2);
+
+@media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 60px) / 3);
+}
+
+@media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 150px) / 6);
+}
+
+
+@media screen and (max-width: 767px) {
+        text-align: center;
     }
 }
 
