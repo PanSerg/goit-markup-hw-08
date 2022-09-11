@@ -1,6 +1,20 @@
 .benefits-container {
     gap: 30px;
     display: flex;
+    flex-direction: column;
+   
+@media screen and (min-width: 480px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+@media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+}
+
+@media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 30px) / 4);
+}
 }
 
 .features-item {
@@ -27,6 +41,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-text-color);
+
+@media screen and (max-width: 767px) {
+     text-align: center;   
+}
 }
 
 .features-text {

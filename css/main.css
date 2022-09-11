@@ -33,6 +33,7 @@ html {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -63,8 +64,14 @@ header, footer, section {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .section.no-padding {
@@ -88,10 +95,25 @@ header, footer, section {
 }
 
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .header__container {
@@ -204,20 +226,26 @@ header, footer, section {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #2F303A;
+  max-width: 1600px;
 }
 
 .hero__overlay {
-  max-width: 1600px;
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/w4/Img.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/w4/img.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media screen and (min-width: 1200px) {
+  .hero__overlay {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 .hero__title {
@@ -231,6 +259,12 @@ header, footer, section {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
@@ -257,6 +291,23 @@ header, footer, section {
 .benefits-container {
   gap: 30px;
   display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 480px) {
+  .benefits-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  .benefits-container {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .benefits-container {
+    flex-basis: calc((100% - 30px) / 4);
+  }
 }
 
 .features-item {
@@ -283,6 +334,11 @@ header, footer, section {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-text-color);
+}
+@media screen and (max-width: 767px) {
+  .features-title {
+    text-align: center;
+  }
 }
 
 .features-text {
