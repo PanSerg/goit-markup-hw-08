@@ -4,11 +4,24 @@
     align-items: baseline;
     flex-grow: 1;
     align-items: center;
+@media screen and (min-width: 768px) {
+    flex-direction: row;
+   
+}
+}
+
+.logo-soc {
+   
 }
 
 .address-container {
+    position: relative;
     text-align: center;
     margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
 }
 
 .contact-footer {
@@ -100,6 +113,10 @@
     align-items: center;
     text-align: center;
     margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
 }
 
 .text-action {
@@ -155,12 +172,14 @@
 .subscription {
     display: flex;
     align-items: flex-end;
-    flex-wrap: column;
     justify-content: end;
     gap: 0;
 }
 .footer-letter-br {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
     & input {
     outline: none;
     font-weight: 400;
@@ -187,6 +206,10 @@
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     border: transparent;
+    margin-top: 20px;
+@media screen and (min-width: 768px) {
+    margin-top: 0;
+}
 }
 
 .text-box:focus {
