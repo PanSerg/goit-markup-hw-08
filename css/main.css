@@ -268,6 +268,12 @@ header, footer, section {
   text-transform: uppercase;
   color: #FFFFFF;
 }
+@media screen and (max-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
@@ -437,6 +443,12 @@ header, footer, section {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+}
+@media screen and (max-width: 1199px) {
+  .team {
+    font-size: 28px;
+    line-height: 1.17;
+  }
 }
 
 .site-item {
