@@ -1,11 +1,13 @@
 .footer-container {
-    align-items: center;
+    display: flex;
+    flex-direction: column;
     align-items: baseline;
     flex-grow: 1;
-    
+    align-items: center;
 }
 
 .address-container {
+    text-align: center;
     margin-bottom: 60px;
 }
 
@@ -89,11 +91,15 @@
 }
 
 .footer-letter {
-    margin-left: 93px;
+    align-items: center;
+    text-align: center;
+    
 }
 
 .container-networks {
-    margin-left: 70px;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 .text-action {
@@ -146,6 +152,13 @@
     color: var(--primary-white-color);
 }
 
+.subscription {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: column;
+    justify-content: end;
+    gap: 0;
+}
 .footer-letter-br {
     display: flex;
     & input {
@@ -159,6 +172,21 @@
     color: rgba(255, 255, 255, 0.6);
     padding-left: 16px;
 }
+}
+.subscription-button {
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--primary-white-color);
+    background-color: var(--accent-color);
+    border: transparent;
 }
 
 .text-box:focus {

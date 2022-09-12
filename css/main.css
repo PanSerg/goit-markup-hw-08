@@ -925,6 +925,19 @@ textarea {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.address-container {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .contact-footer {
   margin-top: 9px;
   font-family: "Roboto";
@@ -969,12 +982,6 @@ textarea {
   color: var(--primary-white-color);
 }
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
-  flex-grow: 1;
-}
-
 .item-with {
   align-items: center;
   justify-content: center;
@@ -1009,11 +1016,14 @@ textarea {
 }
 
 .footer-letter {
-  margin-left: 93px;
+  align-items: center;
+  text-align: center;
 }
 
 .container-networks {
-  margin-left: 70px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .text-action {
@@ -1066,6 +1076,14 @@ textarea {
   color: var(--primary-white-color);
 }
 
+.subscription {
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: column;
+  justify-content: end;
+  gap: 0;
+}
+
 .footer-letter-br {
   display: flex;
 }
@@ -1079,6 +1097,22 @@ textarea {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   padding-left: 16px;
+}
+
+.subscription-button {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  border: transparent;
 }
 
 .text-box:focus {
