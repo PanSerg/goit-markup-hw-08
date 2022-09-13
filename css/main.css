@@ -8,6 +8,7 @@
   --primary-white-color: #ffffff;
   --lable-color: #000000;
   --cubic-beziar: cubic-bezier(0.4, 0, 0.2, 1);
+  --bg-gradient: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 h1,
@@ -124,13 +125,13 @@ header, footer, section {
   }
 }
 
+.header {
+  border-bottom: 1px solid #F5F5F5;
+}
+
 .header__container {
   display: flex;
   align-items: center;
-}
-
-.header {
-  border-bottom: 1px solid #F5F5F5;
 }
 
 .logo {
@@ -156,11 +157,16 @@ header, footer, section {
 }
 
 .navigation__list {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 }
 
 .navigation__link {
@@ -205,7 +211,12 @@ header, footer, section {
 }
 
 .connect {
-  display: flex;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .connect {
+    display: flex;
+  }
 }
 
 .header__connect {
@@ -244,15 +255,40 @@ header, footer, section {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/w4/img.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img/hero-bg-mob.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img/hero-bg-mob.webp");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: var(--bg-gradient), url("../images/hero-img/hero-bg-mob-2x.jpg");
+    background-image: var(--bg-gradient), url("../images/hero-img/hero-bg-mob-2x.webp");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__overlay {
+    background-image: var(--bg-gradient), url("../images/hero-img/hero-bg-tab.jpg");
+    background-image: var(--bg-gradient), url("../images/hero-img/hero-bg-tab.webp");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: var(--bg-gradient), url("../images/hero-img/hero-bg-tab-2x.jpg");
+    background-image: var(--bg-gradient), url("../images/hero-img/hero-bg-tab-2x.webp");
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__overlay {
+    background-image: var(--bg-gradient), url("../images/hero-img/hero-bg-desk.jpg");
     padding-top: 200px;
     padding-bottom: 200px;
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero__overlay {
+    background-image: var(--bg-gradient), url("../images/hero-img/hero-bg-desk-2x.jpg");
   }
 }
 
@@ -269,6 +305,12 @@ header, footer, section {
   color: #FFFFFF;
 }
 @media screen and (max-width: 480px) {
+  .hero__title {
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+@media screen and (max-width: 768px) {
   .hero__title {
     font-size: 26px;
     line-height: 1.62;
