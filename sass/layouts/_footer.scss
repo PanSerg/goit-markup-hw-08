@@ -11,7 +11,11 @@
 }
 
 .logo-soc {
-   
+  display: flex;
+  flex-direction: column;
+@media screen and (min-width: 768px) {
+    flex-direction: row;
+}
 }
 
 .address-container {
@@ -19,8 +23,7 @@
     text-align: center;
     margin-bottom: 60px;
     @media screen and (min-width: 768px) {
-            flex-direction: row;
-            justify-content: space-around;
+            display: block;
         }
 }
 
@@ -106,16 +109,21 @@
 .footer-letter {
     align-items: center;
     text-align: center;
+@media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+}
     
 }
 
 .container-networks {
-    align-items: center;
+    flex-direction: row;
     text-align: center;
     margin-bottom: 60px;
     @media screen and (min-width: 768px) {
-            flex-direction: row;
-            justify-content: space-around;
+            display: block;
+            flex-direction: column;
+            justify-content: flex-end;
+            
         }
 }
 
@@ -207,9 +215,10 @@
     background-color: var(--accent-color);
     border: transparent;
     margin-top: 20px;
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
     margin-top: 0;
 }
+
 }
 
 .text-box:focus {
