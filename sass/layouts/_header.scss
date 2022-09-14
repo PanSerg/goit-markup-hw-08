@@ -84,8 +84,10 @@
 
 .connect {
     display: none;
-@media screen and (min-width: 1200px) {
-    display: flex; 
+@media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+   
 }
 }
 
@@ -112,4 +114,117 @@
     margin-right: 50px;
     margin-right: 10px;
     fill: currentColor;
+}
+
+.header-btn-open {
+    left: 425px;
+    top: 10px;
+    margin-left: auto;
+}
+
+
+.mob-menu {
+   position: fixed; 
+   background-color: #F5F5F5;
+   z-index: 1;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   padding-top: 48px;
+   padding-bottom: 48px;
+   
+} 
+
+.menu-btn-close {
+    display: block;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.mob-menu-navigation {
+    margin-left: 40px;
+}
+
+.mob-menu-list {
+    
+}
+
+.mob-menu-item {}
+
+.mob-menu-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: #212121;
+}
+
+.mob-menu-item:not(:last-child) {
+    margin-bottom: 33px;
+}
+
+.link {}
+
+.current {}
+
+.navigation__link {}
+
+.no-current {}
+
+.menu-connect {
+    margin-left: 40px;
+    margin-top: auto;
+}
+
+.menu-mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+     color: #757575;
+     margin-top: 32px;
+     margin-bottom: 64px;
+}
+
+.menu-connect-tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+     color: #2196F3;
+    //  margin-top: 302px;
+}
+
+.menu-networks {
+    display: flex;
+    margin-left: 40px;
+}
+
+.menu-networks-link {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+     color: #2196F3;
+&:last-child {
+    margin: 0;
+}
+}
+
+.menu-networks-link::after {
+    content: "";
+    width: 22px;
+    height: 0;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+}
+
+.menu-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
