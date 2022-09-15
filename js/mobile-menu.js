@@ -25,4 +25,4 @@ openMenuBtn.addEventListener('click', toggleMenu);
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
-} ();
+}) ();
