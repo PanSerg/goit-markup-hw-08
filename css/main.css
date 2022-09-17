@@ -254,7 +254,6 @@ header, footer, section {
 .mob-menu {
   position: fixed;
   background-color: #F5F5F5;
-  z-index: 1;
   top: 0;
   left: 0;
   padding-top: 48px;
