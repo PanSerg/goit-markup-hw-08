@@ -144,10 +144,6 @@ header, footer, section {
   color: var(--accent-color);
 }
 
-.header__logo {
-  margin-right: 93px;
-}
-
 .logo__dark {
   font-weight: 700;
   font-size: 26px;
@@ -246,24 +242,39 @@ header, footer, section {
 }
 
 .header-btn-open {
-  left: 425px;
   top: 10px;
   margin-left: auto;
+  border: none;
+  background-color: transparent;
 }
 
 .mob-menu {
+  transform: translateY(-100%);
+}
+
+.mob-menu.is-open {
   position: fixed;
   background-color: #F5F5F5;
+  z-index: 1;
   top: 0;
   left: 0;
   padding-top: 48px;
   padding-bottom: 48px;
+  transform: translateY(0);
 }
 
 .menu-btn-close {
   display: block;
   margin-left: auto;
   margin-bottom: 10px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.menu-btn-close:focus {
+  fill: var(--accent-color);
+  transition-property: color;
+  transition: transform 250ms var(--cubic-beziar);
 }
 
 .mob-menu-navigation {
@@ -275,7 +286,7 @@ header, footer, section {
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--lable-color);
 }
 
 .mob-menu-item:not(:last-child) {
@@ -292,7 +303,7 @@ header, footer, section {
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--secondary-text-color);
   margin-top: 32px;
   margin-bottom: 64px;
 }
@@ -302,7 +313,7 @@ header, footer, section {
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: var(--accent-color);
 }
 
 .menu-networks {
@@ -316,13 +327,13 @@ header, footer, section {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: var(--accent-color);
 }
 .menu-networks-link:last-child {
   margin: 0;
 }
 
-.menu-networks-link::after {
+.menu-item::after {
   content: "";
   width: 22px;
   height: 0;
