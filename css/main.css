@@ -144,6 +144,17 @@ header, footer, section {
   color: var(--accent-color);
 }
 
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
+}
+
 .logo__dark {
   font-weight: 700;
   font-size: 26px;
@@ -247,6 +258,11 @@ header, footer, section {
   border: none;
   background-color: transparent;
 }
+@media screen and (min-width: 767px) {
+  .header-btn-open {
+    display: none;
+  }
+}
 
 .mob-menu {
   transform: translateY(-100%);
@@ -258,9 +274,16 @@ header, footer, section {
   z-index: 1;
   top: 0;
   left: 0;
+  width: 100vw;
   padding-top: 48px;
   padding-bottom: 48px;
   transform: translateY(0);
+}
+.mob-menu.is-open > .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .menu-btn-close {
@@ -467,12 +490,12 @@ header, footer, section {
 }
 @media screen and (min-width: 480px) {
   .features {
-    flex-basis: calc((100% - 90px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 768px) {
   .features {
-    flex-basis: calc((100% - 90px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -786,6 +809,12 @@ header, footer, section {
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
 }
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 450px;
+    min-height: 609px;
+  }
+}
 
 .backdrop {
   position: fixed;
@@ -797,6 +826,7 @@ header, footer, section {
   opacity: 1;
   visibility: visible;
   transition: opacity 250ms var(--cubic-beziar), visibility 250ms var(--cubic-beziar);
+  overflow-y: scroll;
 }
 .backdrop.is-hidden {
   opacity: 0;

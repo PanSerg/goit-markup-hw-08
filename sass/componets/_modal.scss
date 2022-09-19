@@ -14,6 +14,11 @@
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(1.1);
     }
+@media screen and (min-width: 768px) {
+    min-width: 450px;
+    min-height: 609px;
+   
+}
 }
 
 .backdrop {
@@ -26,6 +31,7 @@
     opacity: 1;
     visibility: visible;
     transition: opacity 250ms var(--cubic-beziar), visibility 250ms var(--cubic-beziar);
+    overflow-y: scroll;
     &.is-hidden {
         opacity: 0;
         pointer-events: none;
