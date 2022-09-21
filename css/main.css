@@ -230,12 +230,6 @@ header, footer, section {
 .header__connect {
   margin-left: auto;
 }
-@media screen and (width: 1200px) {
-  .header__connect {
-    display: flex;
-    flex-direction: column;
-  }
-}
 
 .indent {
   margin-right: 30px;
@@ -250,6 +244,7 @@ header, footer, section {
   .indent {
     display: flex;
     flex-direction: column;
+    gap: 21px;
   }
 }
 
@@ -302,6 +297,8 @@ header, footer, section {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  margin-top: auto;
+  justify-content: space-between;
 }
 
 .menu-btn-close {
@@ -316,10 +313,6 @@ header, footer, section {
   fill: var(--accent-color);
   transition-property: color;
   transition: transform 250ms var(--cubic-beziar);
-}
-
-.mob-menu-navigation {
-  margin-left: 40px;
 }
 
 .mob-menu-link {
@@ -1133,6 +1126,13 @@ textarea {
     justify-content: space-around;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+    flex-grow: 1;
+  }
+}
 
 .logo-soc {
   display: flex;
@@ -1144,6 +1144,11 @@ textarea {
     justify-content: space-around;
     flex-direction: row;
     align-items: baseline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo-soc {
+    width: 437px;
   }
 }
 
@@ -1245,6 +1250,12 @@ textarea {
     flex-wrap: wrap;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-letter {
+    flex-wrap: nowrap;
+    margin-left: 93px;
+  }
+}
 
 .container-networks {
   flex-direction: row;
@@ -1257,6 +1268,11 @@ textarea {
     flex-direction: column;
     justify-content: flex-end;
     margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-networks {
+    margin-left: 70px;
   }
 }
 
@@ -1277,6 +1293,11 @@ textarea {
 @media screen and (min-width: 768px) {
   .text-action {
     margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .text-action {
+    margin-top: 0;
   }
 }
 
@@ -1324,6 +1345,11 @@ textarea {
     justify-content: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .subscription {
+    display: flex;
+  }
+}
 
 .footer-letter-br {
   display: flex;
@@ -1347,6 +1373,11 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-letter-br {
+    display: flex;
   }
 }
 

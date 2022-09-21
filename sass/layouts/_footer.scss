@@ -8,6 +8,13 @@
     align-items: baseline;
     justify-content: space-around;
 }
+
+@media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    flex-grow: 1;
+   
+}
 }
 
 .logo-soc {
@@ -18,6 +25,10 @@
     justify-content: space-around;
     flex-direction: row;
     align-items: baseline;
+}
+@media screen and (min-width: 1200px) {
+    width: 437px;
+  
 }
 }
 
@@ -116,6 +127,11 @@
 @media screen and (min-width: 768px) {
     flex-wrap: wrap;
 }
+
+@media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    margin-left: 93px;
+}
 }
 
 .container-networks {
@@ -127,6 +143,10 @@
             flex-direction: column;
             justify-content: flex-end;
             margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+            margin-left: 70px;
     }
 }
 
@@ -145,6 +165,9 @@
     color: var(--primary-white-color);
 @media screen and (min-width: 768px) {
     margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+    margin-top: 0;
 }
 }
 
@@ -189,6 +212,10 @@
 @media screen and (min-width: 768px) {
     justify-content: center;
 }
+
+@media screen and (min-width: 1200px) {
+    display: flex;
+}
 }
 
 .footer-letter-br {
@@ -208,10 +235,14 @@
     padding-left: 16px;
 }
  @media screen and (min-width: 768px) {
-    display: flex;
+   display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
+ }
+
+ @media screen and (min-width: 1200px) {
+    display: flex;
  }
  }
 

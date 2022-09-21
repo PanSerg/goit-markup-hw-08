@@ -94,15 +94,10 @@
     display: flex;
     flex-direction: column;
 }
- 
 }
 
 .header__connect {
     margin-left: auto;
-    @media screen and (width: 1200px) {
-            display: flex;
-            flex-direction: column;
-        }
 }
 
 .indent {
@@ -116,6 +111,7 @@
     @media screen and (width: 1200px) {
     display: flex;
     flex-direction: column;
+    gap: 21px;
     }
 }
 
@@ -129,7 +125,6 @@
     color: var(--secondary-text-color);
     transition: color 250ms var(--cubic-beziar);
   
-    
 }
 
 .envelope {
@@ -168,7 +163,8 @@
    height: 100vh;
    display: flex;
    flex-direction: column;
-
+   margin-top: auto;
+   justify-content: space-between;
 } 
 
 .menu-btn-close {
@@ -186,7 +182,7 @@
 }
 
 .mob-menu-navigation {
-    margin-left: 40px;
+    
 }
 
 .mob-menu-list {
@@ -223,9 +219,10 @@
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.02em;
-     color: var(--secondary-text-color);
-     margin-top: 32px;
-     margin-bottom: 64px;
+    color: var(--secondary-text-color);
+    margin-top: 32px;
+    margin-bottom: 64px;
+
 }
 
 .menu-connect-tel {
