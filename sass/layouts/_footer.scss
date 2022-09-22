@@ -8,15 +8,11 @@
     align-items: baseline;
     justify-content: space-around;
 }
-
 @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
-    flex-grow: 1;
-   
 }
 }
-
 .logo-soc {
   display: flex;
   flex-direction: column;
@@ -28,7 +24,7 @@
 }
 @media screen and (min-width: 1200px) {
     width: 507px;
-  
+
 }
 }
 
@@ -130,7 +126,7 @@
 
 @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
-    margin-left: 93px;
+
 }
 }
 

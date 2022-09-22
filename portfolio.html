@@ -11,7 +11,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-<!-- <link rel="stylesheet" href="./css/styles.css"> -->
 <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
@@ -37,10 +36,71 @@
                 <use href="./images/w4/symbol-defs.svg#icon-smartphone"></use>
             </svg>+38 096 111 11 11</a></li>
         </ul>
+        <button type="button" class="header-btn-open js-open-menu">
+            <svg class="#" width="40" height="40">
+                <use href="./images/w4/symbol-defs.svg#icon-button-menu"></use>
+            </svg>
+        </button>
+        
+        <div class="mob-menu js-menu-container">
+            <div class="container">
+        
+                <div class="mob-menu-top">
+                    <button type="button" class="menu-btn-close js-close-menu">
+                        <svg class="" width="18.67" height="18.67">
+                            <use href="./images/w4/symbol-defs.svg#close-icon"></use>
+                        </svg>
+                    </button>
+        
+        
+                    <nav class="mob-menu-navigation">
+                        <div class="menu-part">
+                            <ul class="mob-menu-list">
+                                <li class="mob-menu-item">
+                                    <a class="mob-menu-link link mob-menu-link no-current" href="">Студія</a>
+                                </li>
+                                <li class="mob-menu-item">
+                                    <a class="mob-menu-link link current" href="./portfolio.html">Портфоліо</a>
+                                </li>
+                                <li class="mob-menu-item">
+                                    <a class="mob-menu-link link no-current" href="">Контакти</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        
+            <div class="menu-part">
+                <ul class="menu-connect header-connect">
+                    <li><a class="menu-connect-tel link" href="tel:+380961111111">
+                            +38 096 111 11 11</a></li>
+        
+                    <li class="indent"><a class="menu-mail link" href="mailto:info@devstudio.com">
+                            info@devstudio.com</a></li>
+                </ul>
+        
+                <ul class="menu-networks">
+                    <li class="menu-item">
+                        <a class="menu-networks-link">Instagram</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-networks-link">Twitter</a>
+                    </li>
+                    <li class="menu-item">
+                        <a class="menu-networks-link">Facebook</a>
+                    </li>
+                    <li class="">
+                        <a class="menu-networks-link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </div>
     </div>
     </header>
 <main>
-    <section class="section"> 
+    <section class="section block"> 
         <div class="container">
         <h1 class="visually-hidden">Примеры работ</h1>
    <ul class="filter">
@@ -194,9 +254,10 @@
             </div>
     </section>
 </main>
-        <footer class="style-footer">
-            <div class="container footer-container">
-                <div class="">
+    <footer class="style-footer block">
+        <div class="container footer-container">
+            <div class="logo-soc">
+                <div class="address-container">
                     <a class="logo logo-footer" href="">Web<span class="lable">Studio</span></a>
                     <address>
                         <ul>
@@ -240,14 +301,15 @@
                                 </svg></a>
                         </li>
                         </ul>
+                    </div>
                 </div>
                 <div class="footer-letter">
                     <p class="text-action">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</p>
 
-                    <form class="">
+                    <form class="subscription">
                     <div class="footer-letter-br">
                         <input class="text-box" placeholder="E-mail">
-                        <button type="submit" class="button send-letter">Підписатися
+                        <button type="submit" class="subscription-button send-letter">Підписатися
                             <svg class="footer-letter-icon" width="24" height="24">
                                 <use href="./images/w4/symbol-defs.svg#icon-icon-send"></use>
                             </svg></button>
@@ -256,5 +318,6 @@
                 </div>
             </div>
         </footer> 
+        <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
