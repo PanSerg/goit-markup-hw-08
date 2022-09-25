@@ -42,6 +42,7 @@
     padding-right: 24px;
     padding-left: 24px;
     padding-bottom: 20px;
+    flex-grow: 1;
 }
 
 .portfolio-topics {
@@ -109,7 +110,9 @@
 }
 
 .portfolio-card-link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     transition-property: box-shadow;
     transition: 250ms var(--cubic-beziar);
     &:hover,

@@ -34,7 +34,6 @@ html {
 
 img {
   display: block;
-  width: 100%;
   max-width: 100%;
   height: auto;
 }
@@ -54,14 +53,6 @@ body {
 }
 .link:hover, .link:focus {
   color: var(--accent-color);
-}
-
-header, footer, section {
-  display: none;
-}
-
-.block {
-  display: block;
 }
 
 .section {
@@ -1048,6 +1039,7 @@ textarea {
   padding-right: 24px;
   padding-left: 24px;
   padding-bottom: 20px;
+  flex-grow: 1;
 }
 
 .portfolio-topics {
@@ -1122,7 +1114,9 @@ textarea {
 }
 
 .portfolio-card-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition-property: box-shadow;
   transition: 250ms var(--cubic-beziar);
 }

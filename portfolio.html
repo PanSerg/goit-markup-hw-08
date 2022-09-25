@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="header block">
+    <header class="header">
         <div class="container header__container">
         
             <a class="logo header__logo" href="">Web<span class="logo__dark">Studio</span></a>
@@ -27,14 +27,16 @@
             </ul>
 
         <ul class="connect header__connect">
-    <li class="indent"><a class="connect__contact link" href="mailto:info@devstudio.com">
-        <svg class="envelope" width="16" height="12">
-            <use href="./images/w4/symbol-defs.svg#icon-envelope2"></use>
-        </svg>info@devstudio.com</a></li>
-        <li><a class="connect__contact link" href="tel:+380961111111">
-            <svg class="envelope" width="10" height="16">
-                <use href="./images/w4/symbol-defs.svg#icon-smartphone"></use>
-            </svg>+38 096 111 11 11</a></li>
+            <li class="indent"><a class="connect__contact link" href="mailto:info@devstudio.com">
+                <svg class="envelope" width="16" height="12">
+                    <use href="./images/w4/symbol-defs.svg#icon-envelope2"></use>
+                </svg>info@devstudio.com</a>
+            </li>
+            <li><a class="connect__contact link" href="tel:+380961111111">
+                <svg class="envelope" width="10" height="16">
+                    <use href="./images/w4/symbol-defs.svg#icon-smartphone"></use>
+                </svg>+38 096 111 11 11</a>
+            </li>
         </ul>
         <button type="button" class="header-btn-open js-open-menu">
             <svg class="#" width="40" height="40">
@@ -51,7 +53,6 @@
                             <use href="./images/w4/symbol-defs.svg#close-icon"></use>
                         </svg>
                     </button>
-        
         
                     <nav class="mob-menu-navigation">
                         <div class="menu-part">
@@ -74,10 +75,12 @@
             <div class="menu-part">
                 <ul class="menu-connect header-connect">
                     <li><a class="menu-connect-tel link" href="tel:+380961111111">
-                            +38 096 111 11 11</a></li>
+                            +38 096 111 11 11</a>
+                    </li>
         
                     <li class="indent"><a class="menu-mail link" href="mailto:info@devstudio.com">
-                            info@devstudio.com</a></li>
+                            info@devstudio.com</a>
+                    </li>
                 </ul>
         
                 <ul class="menu-networks">
@@ -96,165 +99,311 @@
                 </ul>
             </div>
         </div>
-     </div>
     </div>
+   
     </header>
 <main>
-    <section class="section block"> 
+    <section class="section"> 
         <div class="container">
-        <h1 class="visually-hidden">Примеры работ</h1>
-   <ul class="filter">
-    <li class="menu-distance"><button type="button" class="filter-button focus-menu">Усі</button></li>
-    <li class="menu-distance"><button type="button" class="filter-button focus-menu">Веб-сайти</button></li>
-    <li class="menu-distance"><button type="button" class="filter-button focus-menu">Додатки</button></li>
-    <li class="menu-distance"><button type="button" class="filter-button focus-menu">Дизайн</button></li>
-    <li class="menu-distance"><button type="button" class="filter-button focus-menu">Маркетинг</button></li>
-   </ul>
+            <h1 class="visually-hidden">Примеры работ</h1>
+            <ul class="filter">
+                <li class="menu-distance"><button type="button" class="filter-button focus-menu">Усі</button></li>
+                <li class="menu-distance"><button type="button" class="filter-button focus-menu">Веб-сайти</button></li>
+                <li class="menu-distance"><button type="button" class="filter-button focus-menu">Додатки</button></li>
+                <li class="menu-distance"><button type="button" class="filter-button focus-menu">Дизайн</button></li>
+                <li class="menu-distance"><button type="button" class="filter-button focus-menu">Маркетинг</button></li>
+            </ul>
    
-    <ul class="flex-container">
+            <ul class="flex-container">
 
-    <li class="flex-element">
-    <a class="portfolio-card-link" href="#">
-    <div class="portfolio-thumb">
-    <img src="./images/works/work1.jpg" alt="ноутбук" width="370" height="294"/>
-     <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-    це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-    </p>
-    </div>
+                <li class="flex-element">
+                    <a class="portfolio-card-link" href="#">
+                        <div class="portfolio-thumb">
+                            <picture>
+                                <source srcset="
+                                ./images/works/work1-desctop.jpg     1x,
+                                ./images/works/work1-desctop-2x.jpg  2x"
+                                media="(min-width:1200px)"/>
+                                <source srcset="
+                                ./images/works/work1-tablet.jpg     1x,
+                                ./images/works/work1-tablet-2x.jpg  2x" 
+                                media="(min-width:768px)"/>
+                                <source srcset="
+                                ./images/works/work1-mob.jpg     1x,
+                                ./images/works/work1-mob-2x.jpg  2x" 
+                                media="(max-width:767px)"/>
 
-    <div class="text-pictures">
-    <h2 class="portfolio-topics">Технокряк</h2>
-    <p class="thems-text">Веб-сайт</p>
-    </div>
-    </a>
-    </li>
+                                <img src="./images/works/work1-desctop.jpg" alt="ноутбук" 
+                                width="450" height="294"/>
+                            </picture> 
+   
+                            <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+
+                        <div class="text-pictures">
+                            <h2 class="portfolio-topics">Технокряк</h2>
+                            <p class="thems-text">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
            
-    <li class="flex-element">
-    <a class="portfolio-card-link" href="#">
-    <div class="portfolio-thumb">
-            <img src="./images/works/work2.jpg" alt="Баскетбол" width="370" height="294"/>
-            <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-                це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-            </p>
-            </div>
+                <li class="flex-element">
+                    <a class="portfolio-card-link" href="#">
+                        <div class="portfolio-thumb">
+                            <picture>
+                                <source srcset="
+                                ./images/works/work2-desctop.jpg     1x,
+                                ./images/works/work2-desctop-2x.jpg  2x"
+                                media="(min-width:1200px)"/>
+                                <source srcset="
+                                ./images/works/work2-tablet.jpg     1x,
+                                ./images/works/work2-tablet-2x.jpg  2x" 
+                                media="(min-width:768px)"/>
+                                <source srcset="
+                                ./images/works/work2-mob.jpg     1x,
+                                ./images/works/work2-mob-2x.jpg  2x" 
+                                media="(max-width:767px)"/>
+
+                                <img src="./images/works/work2-desctop.jpg" alt="Баскетбол" 
+                                width="450" height="294"/>
+                            </picture>
+   
+                            <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
             
-            <div class="text-pictures">
-                <h2 class="portfolio-topics">Постер New Orlean vs Golden Star</h2>
-                <p class="thems-text">Дизайн</p>
-            </div>
-            </a>
-            </li>
+                        <div class="text-pictures">
+                            <h2 class="portfolio-topics">Постер New Orlean vs Golden Star</h2>
+                            <p class="thems-text">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
             
-            <li class="flex-element">
-            <a href="#" class="portfolio-card-link">
-                <div class="portfolio-thumb">
-            <img src="./images/works/work3.jpg" alt="Рыба" width="370" height="294"/>
-            <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-                це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-            </p>
-            </div>
-            <div class="text-pictures">
-                <h2 class="portfolio-topics">Ресторан Seafood</h2>
-                <p class="thems-text">Додаток</p>
-            </div>
-            </a>
-            </li>
+                <li class="flex-element">
+                    <a href="#" class="portfolio-card-link">
+                        <div class="portfolio-thumb">
+                            <picture>
+                                <source srcset="
+                                ./images/works/work3-desctop.jpg     1x,
+                                ./images/works/work3-desctop-2x.jpg  2x"
+                                media="(min-width:1200px)"/>
+                                <source srcset="
+                                ./images/works/work3-tablet.jpg     1x,
+                                ./images/works/work3-tablet-2x.jpg  2x" 
+                                media="(min-width:768px)"/>
+                                <source srcset="
+                                ./images/works/work3-mob.jpg     1x,
+                                ./images/works/work3-mob-2x.jpg  2x" 
+                                media="(max-width:767px)"/>
+                                <img src="./images/works/work3-desctop.jpg" alt="Рыба" 
+                                width="450" height="294"/>
+                            </picture>
+                    
+                            <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="text-pictures">
+                            <h2 class="portfolio-topics">Ресторан Seafood</h2>
+                            <p class="thems-text">Додаток</p>
+                        </div>
+                    </a>
+                </li>
 
-            <li class="flex-element">
-            <a href="#" class="portfolio-card-link">
-            <div class="portfolio-thumb">
-            <img src="./images/works/work4.jpg" alt="Наушники" width="370" height="294"/>
-            <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-                це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-            </p>
-            </div>
-            <div class="text-pictures">
-                <h2 class="portfolio-topics">Проєкт Prime</h2>
-                <p class="thems-text">Маркетинг</p>
-            </div>
-            </a>
-            </li>
+                <li class="flex-element">
+                    <a href="#" class="portfolio-card-link">
+                        <div class="portfolio-thumb">
+                            <picture>
+                                <source srcset="
+                                ./images/works/work4-desctop.jpg     1x,
+                                ./images/works/work4-desctop-2x.jpg  2x"
+                                media="(min-width:1200px)"/>
+                                <source srcset="
+                                ./images/works/work4-tablet.jpg     1x,
+                                ./images/works/work4-tablet-2x.jpg  2x"
+                                media="(min-width:768px)"/>
+                                <source srcset="
+                                ./images/works/work4-mob.jpg     1x,
+                                ./images/works/work4-mob-2x.jpg  2x" 
+                                media="(max-width:767px)"/>
+                                <img src="./images/works/work4-desctop.jpg" alt="Наушники" 
+                                width="450" height="294"/>
+                            </picture>
+                    
+                            <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="text-pictures">
+                            <h2 class="portfolio-topics">Проєкт Prime</h2>
+                            <p class="thems-text">Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
 
-            <li class="flex-element">
-            <a href="#" class="portfolio-card-link">
-            <div class="portfolio-thumb">
-            <img src="./images/works/work5.jpg" alt="Коробки" width="370" height="294"/>
-            <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-                це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-            </p>
-            </div>
-            <div class="text-pictures">
-                <h2 class="portfolio-topics">Проєкт Boxes</h2>
-                <p class="thems-text">Приложение</p>
-            </div>
-            </a>
-            </li>
+                <li class="flex-element">
+                    <a href="#" class="portfolio-card-link">
+                        <div class="portfolio-thumb">
+                            <picture>
+                                <source srcset="
+                                ./images/works/work5-desctop.jpg     1x,
+                                ./images/works/work5-desctop-2x.jpg  2x"
+                                media="(min-width:1200px)"/>
+                                <source srcset="
+                                ./images/works/work5-tablet.jpg     1x,
+                                ./images/works/work5-tablet-2x.jpg  2x" 
+                                media="(min-width:768px)"/>
+                                <source srcset="
+                                ./images/works/work5-mob.jpg     1x,
+                                ./images/works/work5-mob-2x.jpg  2x" 
+                                media="(max-width:767px)"/>
+                                <img src="./images/works/work5-desctop.jpg" alt="Коробки" 
+                                width="450" height="294" />
+                            </picture>
+                    
+                            <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="text-pictures">
+                            <h2 class="portfolio-topics">Проєкт Boxes</h2>
+                            <p class="thems-text">Приложение</p>
+                        </div>
+                    </a>
+                </li>
 
-            <li class="flex-element">
-            <a href="#" class="portfolio-card-link">
-            <div class="portfolio-thumb">
-            <img src="./images/works/work6.jpg" alt="Монитор" width="370" height="294"/>
-            <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-                це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-            </p>
-            </div>
-            <div class="text-pictures">
-                <h2 class="portfolio-topics">Inspiration has no Borders</h2>
-                <p class="thems-text">Веб-сайт</p>
-            </div>
-            </a>
-            </li>
+                <li class="flex-element">
+                    <a href="#" class="portfolio-card-link">
+                        <div class="portfolio-thumb">
+                            <picture>
+                                <source srcset="
+                                ./images/works/work6-desctop.jpg     1x,
+                                ./images/works/work6-desctop-2x.jpg  2x"
+                                media="(min-width:1200px)"/>
+                                <source srcset="
+                                ./images/works/work6-tablet.jpg     1x,
+                                ./images/works/work6-tablet-2x.jpg  2x" 
+                                media="(min-width:768px)"/>
+                                <source srcset="
+                                ./images/works/work6-mob.jpg     1x,
+                                ./images/works/work6-mob-2x.jpg  2x" 
+                                media="(max-width:767px)"/>
+                                <img src="./images/works/work6-desctop.jpg" alt="Монитор" 
+                                width="450" height="294"/>
+                            </picture>
+                  
+                                <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                    це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                </p>
+                        </div>
+                        <div class="text-pictures">
+                            <h2 class="portfolio-topics">Inspiration has no Borders</h2>
+                            <p class="thems-text">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
 
-            <li class="flex-element">
-            <a href="#" class="portfolio-card-link">
-            <div class="portfolio-thumb">
-            <img src="./images/works/work7.jpg" alt="Книга" width="370" height="294"/>
-            <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-                це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-            </p>
-            </div>
-            <div class="text-pictures">
-                <h2 class="portfolio-topics">Видання Limited Edition</h2>
-                <p class="thems-text">Дизайн</p>
-            </div>
-            </a>
-            </li>
+                <li class="flex-element">
+                    <a href="#" class="portfolio-card-link">
+                        <div class="portfolio-thumb">
+                            <picture>
+                                <source srcset="
+                                ./images/works/work7-desctop.jpg     1x,
+                                ./images/works/work7-desctop-2x.jpg  2x" 
+                                media="(min-width:1200px)"/>
+                                <source srcset="
+                                ./images/works/work7-tablet.jpg     1x,
+                                ./images/works/work7-tablet-2x.jpg  2x" 
+                                media="(min-width:768px)"/>
+                                <source srcset="
+                                ./images/works/work7-mob.jpg     1x,
+                                ./images/works/work7-mob-2x.jpg  2x" 
+                                media="(max-width:767px)"/>
+                                <img src="./images/works/work7-desctop.jpg" alt="Книга" 
+                                width="450" height="294"/>
+                            </picture>
+                    
+                                <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                    це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                </p>
+                        </div>
+                        <div class="text-pictures">
+                            <h2 class="portfolio-topics">Видання Limited Edition</h2>
+                            <p class="thems-text">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
 
-            <li class="flex-element">
-            <a href="#" class="portfolio-card-link">
-            <div class="portfolio-thumb">
-            <img src="./images/works/work8.jpg" alt="Лейбл" width="370" height="294"/>
-            <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-                це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-            </p>
-            </div>
-            <div class="text-pictures">
-                <h2 class="portfolio-topics">Проєкт LAB</h2>
-                <p class="thems-text">Маркетинг</p>
-            </div>
-            </a>
-            </li>
+                <li class="flex-element">
+                    <a href="#" class="portfolio-card-link">
+                        <div class="portfolio-thumb">
+                            <picture>
+                                <source srcset="
+                                ./images/works/work8-desctop.jpg     1x,
+                                ./images/works/work8-desctop-2x.jpg  2x"
+                                media="(min-width:1200px)"/>
+                                <source srcset="
+                                ./images/works/work8-tablet.jpg     1x,
+                                ./images/works/work8-tablet-2x.jpg  2x" 
+                                media="(min-width:768px)"/>
+                                <source srcset="
+                                ./images/works/work8-mob.jpg     1x,
+                                ./images/works/work8-mob-2x.jpg  2x" 
+                                media="(max-width:767px)"/>
+                                <img src="./images/works/work8-desctop.jpg" alt="Лейбл" 
+                                width="450" height="294"/>
+                            </picture>
+                    
+                            <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="text-pictures">
+                            <h2 class="portfolio-topics">Проєкт LAB</h2>
+                            <p class="thems-text">Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
 
-            <li class="flex-element">
-            <a href="#" class="portfolio-card-link">
-            <div class="portfolio-thumb">
-            <img src="./images/works/work9.jpg" alt="Ноутбук 2" width="370" height="294"/>
-            <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
-                це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
-            </p>
-            </div>
-            <div class="text-pictures">
-                <h2 class="portfolio-topics">Growing Business</h2>
-                <p class="thems-text">Додаток</p>
-            </div>
-            </a>
-            </li>
+                <li class="flex-element">
+                    <a href="#" class="portfolio-card-link">
+                        <div class="portfolio-thumb">
+                            <picture>
+                                <source srcset="
+                                ./images/works/work9-desctop.jpg     1x,
+                                ./images/works/work9-desctop-2x.jpg  2x"
+                                media="(min-width:1200px)"/>
+                                <source srcset="
+                                ./images/works/work9-tablet.jpg     1x,
+                                ./images/works/work9-tablet-2x.jpg  2x" 
+                                media="(min-width:768px)"/>
+                                <source srcset="
+                                ./images/works/work9-mob.jpg     1x,
+                                ./images/works/work9-mob-2x.jpg  2x" 
+                                media="(max-width:767px)"/>
+                                <img src="./images/works/work9-desctop.jpg" alt="Ноутбук 2" 
+                                width="450" height="294"/>
+                            </picture>
+                            
+                            <p class="portfolio-overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+                                це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </p>
+                        </div>
+                        <div class="text-pictures">
+                            <h2 class="portfolio-topics">Growing Business</h2>
+                            <p class="thems-text">Додаток</p>
+                        </div>
+                    </a>
+                </li>
             
             </ul>
-            </div>
+        </div>
     </section>
 </main>
-    <footer class="style-footer block">
+    <footer class="style-footer">
         <div class="container footer-container">
     
             <div class="address-container">
