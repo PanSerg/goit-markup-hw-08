@@ -273,6 +273,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-left: 40px;
+  padding-right: auto;
 }
 
 .mob-menu.is-open {
@@ -382,7 +386,7 @@ body {
 }
 
 .hero__overlay {
-  height: 600px;
+  width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img/hero-bg-mob.jpg");
@@ -399,6 +403,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .hero__overlay {
+    width: 768px;
     background-image: var(--bg-gradient), url("../images/hero-img/hero-bg-tab.jpg");
     background-image: var(--bg-gradient), url("../images/hero-img/hero-bg-tab.webp");
   }
@@ -411,6 +416,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero__overlay {
+    width: 1600px;
     background-image: var(--bg-gradient), url("../images/hero-img/hero-bg-desk.jpg");
     padding-top: 200px;
     padding-bottom: 200px;
@@ -439,7 +445,7 @@ body {
     line-height: 1.62;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1199px) {
   .hero__title {
     font-size: 26px;
     line-height: 1.62;
@@ -747,7 +753,6 @@ body {
 }
 
 .clients-item {
-  height: 92px;
   flex-basis: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
@@ -789,7 +794,6 @@ body {
 
 .features-logo {
   width: 106px;
-  height: 60px;
   fill: rgb(175, 177, 184);
   transition: fill 250ms var(--cubic-beziar);
   fill: currentColor;
@@ -811,6 +815,12 @@ body {
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(1.1);
+}
+@media screen and (max-width: 480px) {
+  .modal {
+    height: 100%;
+    width: 100%;
+  }
 }
 @media screen and (width: 768px) {
   .modal {
@@ -912,7 +922,6 @@ textarea {
   resize: none;
   padding: 12px;
   width: 448px;
-  height: 120px;
   left: 576px;
   top: 518px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1138,7 +1147,7 @@ textarea {
   display: flex;
   justify-content: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .filter {
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -1306,6 +1315,7 @@ textarea {
     flex-wrap: wrap;
   }
 }
+
 .container-networks {
   flex-direction: row;
   text-align: center;
@@ -1367,6 +1377,11 @@ textarea {
 }
 .text-box input:focus {
   border-color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .text-box {
+    width: 358px;
+  }
 }
 
 .fotter-imput-bt {

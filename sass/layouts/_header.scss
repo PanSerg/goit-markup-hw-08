@@ -149,7 +149,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    
+    padding-top: 48px;
+    padding-bottom: 48px;
+    padding-left: 40px;
+    padding-right: auto;
 }
 
 .mob-menu.is-open {
@@ -216,7 +219,7 @@
     font-size: 34px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-     color: var(--accent-color);
+    color: var(--accent-color);
     //  margin-top: 302px;
 }
 
