@@ -1311,11 +1311,6 @@ textarea {
   align-items: center;
   text-align: center;
 }
-@media screen and (min-width: 768px) {
-  .footer-letter {
-    flex-wrap: wrap;
-  }
-}
 
 .container-networks {
   flex-direction: row;
