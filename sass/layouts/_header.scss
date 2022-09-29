@@ -24,7 +24,7 @@
     
 @media screen and (min-width: 1200px) {
     margin-right: 93px;
-    }
+}
 }
 
 .logo__dark {
@@ -199,7 +199,6 @@
 }
 
 .menu-connect {
-    margin-left: 40px;
     margin-top: auto;
 }
 
@@ -216,7 +215,7 @@
 
 .menu-connect-tel {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 26px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--accent-color);
@@ -225,13 +224,12 @@
 
 .menu-networks {
     display: flex;
-    margin-left: 40px;
 }
 
 .menu-networks-link {
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 10px;
     line-height: 1.22;
     letter-spacing: 0.02em;
      color: var(--accent-color);

@@ -94,10 +94,6 @@ body {
   margin: -1px;
 }
 
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -323,7 +319,6 @@ body {
 }
 
 .menu-connect {
-  margin-left: 40px;
   margin-top: auto;
 }
 
@@ -339,7 +334,7 @@ body {
 
 .menu-connect-tel {
   font-weight: 500;
-  font-size: 34px;
+  font-size: 26px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--accent-color);
@@ -347,13 +342,12 @@ body {
 
 .menu-networks {
   display: flex;
-  margin-left: 40px;
 }
 
 .menu-networks-link {
   text-decoration: none;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 10px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
@@ -753,6 +747,7 @@ body {
 }
 
 .clients-item {
+  height: 92px;
   flex-basis: calc((100% - 30px) / 2);
 }
 @media screen and (min-width: 768px) {
@@ -804,7 +799,7 @@ body {
   top: 50%;
   left: 50%;
   min-height: 581px;
-  min-width: 528px;
+  width: 100%;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -814,7 +809,7 @@ body {
   outline: 1px solid var(--accent-color);
 }
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1);
+  transform: translatex(-50%) scale(1.1);
 }
 @media screen and (max-width: 480px) {
   .modal {
@@ -867,7 +862,7 @@ body {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 448px;
+  width: 100%;
   border-radius: 4px;
   font-weight: 400;
   font-size: 12px;
@@ -921,7 +916,8 @@ body {
 textarea {
   resize: none;
   padding: 12px;
-  width: 448px;
+  width: 100%;
+  height: 120px;
   left: 576px;
   top: 518px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -971,7 +967,7 @@ textarea {
   transition: background-color 250ms var(--cubic-beziar), border-color 250ms var(--cubic-beziar);
   cursor: pointer;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 9px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
@@ -1102,7 +1098,7 @@ textarea {
 }
 
 .flex-element {
-  width: 450px;
+  width: 100%;
 }
 .flex-element:nth-child(3n) {
   margin-right: 0;
@@ -1111,6 +1107,11 @@ textarea {
   margin-bottom: 0;
 }
 @media screen and (min-width: 480px) {
+  .flex-element {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
   .flex-element {
     width: 354px;
   }
@@ -1122,7 +1123,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .flex-element {
-    flex-basis: calc((100% - 90px) / 2);
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1366,7 +1367,7 @@ textarea {
   width: 570px;
   flex-direction: row;
   justify-content: space-between;
-  width: 450px;
+  width: 100%;
   height: 50px;
   left: 15px;
   top: 5277px;
