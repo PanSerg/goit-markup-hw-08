@@ -243,11 +243,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   transition: color 250ms var(--cubic-beziar);
-  padding-bottom: 10px;
-}
-
-.connect__contact:not(:last-child) {
-  padding-bottom: 21px;
+  margin-bottom: 10px;
 }
 
 .envelope {
