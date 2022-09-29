@@ -22,9 +22,13 @@
     flex-direction: column;
     width: 100%;
 @media screen and (min-width: 480px) {
-    flex-direction: row;
     flex-wrap: wrap;
 }
+
+@media screen and (min-width: 768px) {
+    flex-direction: row;
+}
+
 }
 
 .site-command {
@@ -33,11 +37,11 @@
     border-radius: 0px 0px 4px 4px;
     width: 100%;
 @media screen and (min-width: 480px) {
-    flex-basis: calc((100% - 90px) / 2);
+    flex-basis: calc((100% - 30px));
 }
 
 @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 90px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
 }
 
 @media screen and (min-width: 1200px) {
