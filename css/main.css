@@ -243,7 +243,29 @@ body {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   transition: color 250ms var(--cubic-beziar);
-  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .connect__contact {
+    padding-bottom: 15px;
+  }
+}
+
+.connect__contact-tel {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  transition: color 250ms var(--cubic-beziar);
+  padding-bottom: 21px;
+}
+@media screen and (min-width: 1200px) {
+  .connect__contact-tel {
+    padding-bottom: 15px;
+  }
 }
 
 .envelope {
