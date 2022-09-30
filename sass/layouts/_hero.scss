@@ -7,7 +7,7 @@
 }
 
 .hero__overlay {
-    width: 480px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img/hero-bg-mob.jpg");
@@ -24,6 +24,10 @@
         url("../images/hero-img/hero-bg-mob-2x.webp");
     }
 
+@media screen and (min-width: 480px) {
+    width: 480px;
+}
+
 @media screen and (min-width: 768px) {
     width: 768px;
     background-image: var(--bg-gradient), url("../images/hero-img/hero-bg-tab.jpg");
@@ -37,7 +41,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-    max-width: 1600px;
+    width: 1600px;
     background-image: var(--bg-gradient), url("../images/hero-img/hero-bg-desk.jpg");
     padding-top: 200px;
     padding-bottom: 200px;

@@ -2,7 +2,7 @@
     gap: 30px;
     display: flex;
     flex-direction: column;
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
     flex-direction: row; 
     flex-wrap: wrap;
 }
@@ -12,9 +12,6 @@
     display: flex;
     flex-direction: column;
 
-@media screen and (min-width: 480px) {
-    flex-basis: calc((100% - 1 * 15px));
-}
 @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 2 * 15px) / 2);
     

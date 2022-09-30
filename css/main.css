@@ -58,6 +58,7 @@ body {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 320px;
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -406,7 +407,7 @@ body {
 }
 
 .hero__overlay {
-  width: 480px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-img/hero-bg-mob.jpg");
@@ -419,6 +420,11 @@ body {
   .hero__overlay {
     background-image: var(--bg-gradient), url("../images/hero-img/hero-bg-mob-2x.jpg");
     background-image: var(--bg-gradient), url("../images/hero-img/hero-bg-mob-2x.webp");
+  }
+}
+@media screen and (min-width: 480px) {
+  .hero__overlay {
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -436,7 +442,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero__overlay {
-    max-width: 1600px;
+    width: 1600px;
     background-image: var(--bg-gradient), url("../images/hero-img/hero-bg-desk.jpg");
     padding-top: 200px;
     padding-bottom: 200px;
@@ -504,7 +510,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .benefits-container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -514,11 +520,6 @@ body {
 .features {
   display: flex;
   flex-direction: column;
-}
-@media screen and (min-width: 480px) {
-  .features {
-    flex-basis: calc(100% - 15px);
-  }
 }
 @media screen and (min-width: 768px) {
   .features {
