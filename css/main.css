@@ -326,6 +326,11 @@ body {
   transition-property: color;
   transition: transform 250ms var(--cubic-beziar);
 }
+@media screen and (min-width: 480px) {
+  .menu-btn-close {
+    margin-left: 375px;
+  }
+}
 
 .mob-menu-link {
   font-weight: 500;
@@ -568,6 +573,11 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+@media screen and (max-width: 767px) {
+  .features-text {
+    text-align: start;
+  }
 }
 
 .section--skills {

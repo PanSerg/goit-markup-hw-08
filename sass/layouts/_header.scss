@@ -153,6 +153,7 @@
     margin-left: auto;
     border: none;
     background-color: transparent;
+
 @media screen and (min-width: 767px) {
     display: none;
 }
@@ -197,6 +198,9 @@
             transition-property: color;
             transition: transform 250ms var(--cubic-beziar);
         }
+    @media screen and (min-width: 480px) {
+        margin-left: 375px;
+    }
 }
 
 .mob-menu-link {
