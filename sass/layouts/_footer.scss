@@ -160,7 +160,7 @@
 
 .text-box {
     display: flex;
-    width: 570px;
+    width: 100%;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
@@ -175,6 +175,11 @@
     & input:focus {
     border-color: var(--accent-color);
     }
+
+@media screen and (min-width: 480px) {
+    max-width: 570px;
+}
+
 @media screen and (min-width: 768px) {
     width: 450px;
 }

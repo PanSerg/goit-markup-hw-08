@@ -59,9 +59,13 @@
 }
 
 .features-logo {
-    width: 106px;
+    width: 100%;
     // height: 60px;
     fill: rgba(175, 177, 184, 1);
     transition: fill 250ms var(--cubic-beziar);
     fill: currentColor;
+
+@media screen and (min-width: 480px) {
+    max-width: 106px;
+}
 }

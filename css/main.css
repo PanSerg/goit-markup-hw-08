@@ -315,6 +315,9 @@ body {
 }
 
 .menu-btn-close {
+  position: absolute;
+  top: 21px;
+  right: 25px;
   display: block;
   margin-left: auto;
   margin-bottom: 10px;
@@ -326,11 +329,6 @@ body {
   fill: var(--accent-color);
   transition-property: color;
   transition: transform 250ms var(--cubic-beziar);
-}
-@media screen and (min-width: 480px) {
-  .menu-btn-close {
-    margin-left: 375px;
-  }
 }
 
 .mob-menu-link {
@@ -403,7 +401,7 @@ body {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #2F303A;
-  max-width: 1600px;
+  width: 100%;
 }
 
 .hero__overlay {
@@ -824,10 +822,15 @@ body {
 }
 
 .features-logo {
-  width: 106px;
+  width: 100%;
   fill: rgb(175, 177, 184);
   transition: fill 250ms var(--cubic-beziar);
   fill: currentColor;
+}
+@media screen and (min-width: 480px) {
+  .features-logo {
+    max-width: 106px;
+  }
 }
 
 .modal {
@@ -1084,11 +1087,16 @@ textarea {
 
 .portfolio-topics {
   font-weight: 700;
-  width: 402px;
+  width: 100%;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+}
+@media screen and (min-width: 480px) {
+  .portfolio-topics {
+    width: 402px;
+  }
 }
 @media screen and (min-width: 768px) {
   .portfolio-topics {
@@ -1389,7 +1397,7 @@ textarea {
 
 .text-box {
   display: flex;
-  width: 570px;
+  width: 100%;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
@@ -1403,6 +1411,11 @@ textarea {
 }
 .text-box input:focus {
   border-color: var(--accent-color);
+}
+@media screen and (min-width: 480px) {
+  .text-box {
+    max-width: 570px;
+  }
 }
 @media screen and (min-width: 768px) {
   .text-box {

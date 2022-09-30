@@ -47,11 +47,15 @@
 
 .portfolio-topics {
     font-weight: 700;
-    width: 402px;
+    width: 100%;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
+
+@media screen and (min-width: 480px) {
+    width: 402px;
+}
 
 @media screen and (min-width: 768px) {
     width: 306px;
