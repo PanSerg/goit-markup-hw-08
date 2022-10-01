@@ -20,6 +20,11 @@
     width: 450px;
     height: 609px;
 }
+
+@media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+}
 }
 
 .backdrop {
@@ -54,7 +59,11 @@
     letter-spacing: 0.03em;
     margin-bottom: 12px;
     color: #212121;
- }
+
+@media screen and (min-width: 1200px) {
+    white-space: nowrap;
+}
+}
 
 .form-field {
     position: relative;
@@ -75,7 +84,7 @@
         padding: 6px 40px 6px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
-         height: 40px;
+        height: 40px;
         }
     & label {
         margin-bottom: 4px;

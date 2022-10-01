@@ -367,6 +367,7 @@ body {
 
 .menu-networks {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu-networks-link {
@@ -401,7 +402,7 @@ body {
   padding-top: 118px;
   padding-bottom: 118px;
   background-color: #2F303A;
-  max-width: 1600px;
+  width: 100%;
 }
 
 .hero__overlay {
@@ -857,6 +858,12 @@ body {
     height: 609px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 
 .backdrop {
   position: fixed;
@@ -890,6 +897,11 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 12px;
   color: #212121;
+}
+@media screen and (min-width: 1200px) {
+  .modal-title {
+    white-space: nowrap;
+  }
 }
 
 .form-field {
@@ -1001,13 +1013,21 @@ textarea {
   transition: background-color 250ms var(--cubic-beziar), border-color 250ms var(--cubic-beziar);
   cursor: pointer;
   font-weight: 400;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
 }
 .checkbox:focus + .checkbox-label {
   background-color: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+  }
 }
 
 .icon-galk {
