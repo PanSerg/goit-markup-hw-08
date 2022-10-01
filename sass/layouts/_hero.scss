@@ -3,7 +3,7 @@
     padding-top: 118px;
     padding-bottom: 118px;
     background-color: #2F303A;
-    width: 100%;
+    max-width: 1600px;
 }
 
 .hero__overlay {
@@ -41,6 +41,7 @@
 }
 
 @media screen and (min-width: 1200px) {
+    width: auto;
     max-width: 1600px;
     background-image: var(--bg-gradient), url("../images/hero-img/hero-bg-desk.jpg");
     padding-top: 200px;
